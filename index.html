@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenis-animation</title>
-    
+    <title>Lenis Animation</title>
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -17,87 +18,129 @@
             grid-column: var(--c);
         }
     </style>
+    <link href="https://fonts.cdnfonts.com/css/mitohan" rel="stylesheet">
+    <style>
+        .mitohan {
+            font-family: 'Mitohan', sans-serif;
+            font-weight: 900;
+            letter-spacing: 4px;
+        }
+    </style>
+
 </head>
 
 <body class="bg-black text-white">
-    
+
     <!-- GRID SECTION -->
     <div class="w-full">
         <div class="w-full grid grid-cols-8 grid-rows-[repeat(15,150px)] gap-4 p-4 overflow-x-hidden">
 
-    <!-- Row 1 -->
-    <div class="aspect-square" style="--r:1;--c:2;"><img src="./assets/img-1.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:1;--c:6;"><img src="./assets/img-2.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 1 -->
+            <div class="elem aspect-square" style="--r:1;--c:2;"><img src="./assets/img-1.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:1;--c:6;"><img src="./assets/img-2.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 2 -->
-    <div class="aspect-square" style="--r:2;--c:4;"><img src="./assets/img-3.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:2;--c:8;"><img src="./assets/img-4.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 2 -->
+            <div class="elem aspect-square" style="--r:2;--c:4;"><img src="./assets/img-3.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:2;--c:8;"><img src="./assets/img-4.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 3 -->
-    <div class="aspect-square" style="--r:3;--c:1;"><img src="./assets/img-5.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:3;--c:5;"><img src="./assets/img-6.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:3;--c:7;"><img src="./assets/img-7.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 3 -->
+            <div class="elem aspect-square" style="--r:3;--c:1;"><img src="./assets/img-5.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:3;--c:5;"><img src="./assets/img-6.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:3;--c:7;"><img src="./assets/img-7.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 4 -->
-    <div class="aspect-square" style="--r:4;--c:3;"><img src="./assets/img-8.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:4;--c:6;"><img src="./assets/img-9.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 4 -->
+            <div class="elem aspect-square" style="--r:4;--c:3;"><img src="./assets/img-8.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:4;--c:6;"><img src="./assets/img-9.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 5 -->
-    <div class="aspect-square" style="--r:5;--c:1;"><img src="./assets/img-10.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:5;--c:4;"><img src="./assets/img-11.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:5;--c:8;"><img src="./assets/img-12.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 5 -->
+            <div class="elem aspect-square" style="--r:5;--c:1;"><img src="./assets/img-10.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:5;--c:4;"><img src="./assets/img-11.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:5;--c:8;"><img src="./assets/img-12.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 6 -->
-    <div class="aspect-square" style="--r:6;--c:2;"><img src="./assets/img-13.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:6;--c:7;"><img src="./assets/img-14.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 6 -->
+            <div class="elem aspect-square" style="--r:6;--c:2;"><img src="./assets/img-13.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:6;--c:7;"><img src="./assets/img-14.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 7 -->
-    <div class="aspect-square" style="--r:7;--c:5;"><img src="./assets/img-15.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:7;--c:3;"><img src="./assets/img-16.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 7 -->
+            <div class="elem aspect-square" style="--r:7;--c:5;"><img src="./assets/img-15.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:7;--c:3;"><img src="./assets/img-16.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 8 -->
-    <div class="aspect-square" style="--r:8;--c:1;"><img src="./assets/img-17.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:8;--c:6;"><img src="./assets/img-18.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:8;--c:8;"><img src="./assets/img-19.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 8 -->
+            <div class="elem aspect-square" style="--r:8;--c:1;"><img src="./assets/img-17.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:8;--c:6;"><img src="./assets/img-18.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:8;--c:8;"><img src="./assets/img-19.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 9 -->
-    <div class="aspect-square" style="--r:9;--c:4;"><img src="./assets/img-20.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 9 -->
+            <div class="elem aspect-square" style="--r:9;--c:4;"><img src="./assets/img-20.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 10 -->
-    <div class="aspect-square" style="--r:10;--c:2;"><img src="./assets/img-1.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:10;--c:7;"><img src="./assets/img-2.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 10 -->
+            <div class="elem aspect-square" style="--r:10;--c:2;"><img src="./assets/img-1.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:10;--c:7;"><img src="./assets/img-2.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 11 -->
-    <div class="aspect-square" style="--r:11;--c:5;"><img src="./assets/img-3.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 11 -->
+            <div class="elem aspect-square" style="--r:11;--c:5;"><img src="./assets/img-3.jpg"
+                    class="w-full h-full object-cover"></div>
 
-    <!-- Row 12 -->
-    <div class="aspect-square" style="--r:12;--c:8;"><img src="./assets/img-4.jpg" class="w-full h-full object-cover"></div>
-    <div class="aspect-square" style="--r:12;--c:3;"><img src="./assets/img-5.jpg" class="w-full h-full object-cover"></div>
+            <!-- Row 12 -->
+            <div class="elem aspect-square" style="--r:12;--c:8;"><img src="./assets/img-4.jpg"
+                    class="w-full h-full object-cover"></div>
+            <div class="elem aspect-square" style="--r:12;--c:3;"><img src="./assets/img-5.jpg"
+                    class="w-full h-full object-cover"></div>
 
-</div>
-
+        </div>
     </div>
 
-    <!-- HERO CENTER OVERLAY -->
-    <div class="fixed inset-0 flex flex-col items-center justify-center text-white pointer-events-none">
-        <h1 class="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 text-center">
+    <!-- HERO OVERLAY -->
+    <div class="pointer-events-none fixed inset-0 flex flex-col items-center justify-center text-white text-center">
+        <h1 class="text-8xl sm:text-6xl md:text-8xl font-bold uppercase mb-4">
             Nikhil Rai <sup>®</sup>
         </h1>
-        <h2 class="text-xl sm:text-2xl md:text-4xl text-center">
-            Smaller Text Field
+
+        <h2 class="text-4xl sm:text-2xl md:text-4xl">
+            ニキルは世界最高の開発者です
         </h2>
     </div>
 
-    <!-- EXTRA CONTENT SECTION -->
-    <div class="w-full h-screen flex items-center justify-center bg-[#D1DD1] text-black px-10 py-96">
-        <p class="text-2xl md:text-3xl leading-relaxed max-w-3xl">
-            Smooth scrolling experience using Lenis with a custom grid layout.
+    <!-- EXTRA CONTENT -->
+    <div
+        class="w-full h-screen mx-auto py-96 text-center text-black bg-[#D1DD11] flex items-center justify-center relative z-[50]">
+        <p class="jp-luxury text-3xl w-3/4 mx-auto leading-[2.6rem] ">
+            ニキル・ライは、静かな精度と洗練された技術美を追求する開発者です。
+            余計なものを削ぎ落とし、本質だけを研ぎ澄ませるミニマリズムの精神を軸に、
+            彼の仕事は常に均衡・調和・機能美を体現しています。シンプルでありながら圧倒的に強く、
+            静かでありながら確かな存在感を放つ—ニキルの創り出すデジタル体験は、
+            現代のエンジニアリングにおける“静寂の中の完成美”を示しています。<sup>®</sup>
         </p>
+
     </div>
 
-    <!-- Scripts -->
+    <!-- Lenis Script -->
     <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="script.js"></script>
-
 </body>
+
 </html>
